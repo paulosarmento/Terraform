@@ -1,4 +1,2 @@
-variable "prefix" {
-
-
-}
+variable "prefix" {}
+variable "cluster_name" {}
