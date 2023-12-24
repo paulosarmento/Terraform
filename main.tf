@@ -4,6 +4,11 @@ terraform {
     aws   = ">=5.31.0"
     local = ">=2.1.0"
   }
+  backend "s3" {
+    bucket = "myfullcyclebucket"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
